@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background-image: url(https://github.com/UWFront-End-Cert/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
+}
+
+h1 {
+    color: darkblue;
+}
+footer {
+    background-color: darkblue;
+}
+footer p {
+    color: white;
+}
