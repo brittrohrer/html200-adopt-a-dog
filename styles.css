@@ -1,16 +1,83 @@
 * {
     box-sizing: border-box;
 }
-header {
-    background-image: url(https://github.com/UWFront-End-Cert/html200-adopt-a-dog/blob/master/images/header-image.jpg?raw=true);
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer";
+    row-gap: 1rem;
+    margin: 0;
 }
-
+header {
+    grid-area: header;
+    margin-bottom: 2rem;
+}
+main {
+    grid-area: main;
+    margin: 2rem 4rem;
+}
 h1 {
     color: #132639;
 }
 footer {
+    grid-area: footer;
     background-color: #132639;
 }
 footer p {
     color: white;
+}
+.header-img-container {
+    background-image: url(images/header-image.jpg);
+    min-height: 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-text-container {
+    position: absolute;
+    color: white;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 10%;
+    top: 10%;
+}
+.header-text-container img {
+    height: 10rem;
+}
+.header-text {
+    color: greenyellow;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Main Navigation Bar*/
+.main-navigation {
+    position: absolute;
+    text-align: left;
+    top: 400px;
+    width: 100%;
+    background: lightgrey;
+}
+.main-navigation ul {
+    list-style-type: none;
+}
+.main-navigation li {
+    display: inline;
+}
+.main-navigation a {
+    text-decoration: none;
+    color: #132639;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+.main-navigation li:after {
+    content: "/";
+    padding: .4rem;
+    color: black;
+    font-weight: bold;
+}
+.main-navigation li:last-of-type:after {
+    content: none;
 }
