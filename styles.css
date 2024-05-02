@@ -23,56 +23,13 @@ h1 {
     color: #264d73;
     font-size: 2rem;
 }
-
-
-/* Footer */
-footer {
-    grid-area: footer;
-    background-color: #264d73;
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding: 3rem 0;
+h2 {
+    color: #264d73;
+    font-size: 1.5rem;
 }
-footer img {
-    width: 15rem;
+p {
+    font-size: 1rem;
 }
-footer p {
-    color: white;
-}
-footer ul {
-    list-style-type: none;
-    padding-bottom: 2rem;
-}
-footer li {
-    display: inline;
-}
-footer li:after {
-    content: "/";
-    padding: .5rem;
-}
-footer li:last-of-type:after {
-    content: none;
-}
-footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 1rem;
-}
-.location {
-    display: inline;
-    padding: 1rem 0;
-    color:#ffffff;
-}
-.location:after {
-    content: "|";
-    padding: 0 1rem;
-}
-.location:last-of-type:after {
-    content: none;
-}
-
 
 /* Header */
 .header-img-container {
@@ -88,24 +45,25 @@ footer a {
     color: white;
     text-align: left;
     vertical-align: middle;
-    left: 5%;
-    top: 20%;
+    left: 3%;
+    top: 25%;
 }
 .header-text-container img {
-    height: 9rem;
+    max-width: 90%;
 }
 .header-text {
     color: #80bf40;
     font-size: 1.8rem;
     font-style: italic;
     margin-top: 0;
+    width: 100%;
 }
 
 /* Checkout in header */
 .checkout {
     position: absolute;
-    top: 8%;
-    right: 5%; 
+    top: 5%;
+    right: 3%; 
     text-align: right;   
 }
 .fa-cart-shopping {
@@ -151,10 +109,64 @@ footer a {
 .main-navigation li:last-of-type:after {
     content: none;
 }
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #264d73;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+footer img {
+    width: 15rem;
+}
+footer p {
+    color: white;
+    font-size: 1rem;
+}
+footer ul {
+    list-style-type: none;
+    padding-bottom: 2rem;
+}
+footer li {
+    display: inline;
+}
+footer li:after {
+    content: "/";
+    padding: .5rem;
+}
+footer li:last-of-type:after {
+    content: none;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.location {
+    display: inline;
+    padding: 1rem 0;
+    color:#ffffff;
+    font-size: 1rem;
+}
+.location:after {
+    content: "|";
+    padding: 0 1rem;
+}
+.location:last-of-type:after {
+    content: none;
+}
+
+
 /* Homepage */
 .home-intro-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
 }
 .home-intro-img {
@@ -162,11 +174,13 @@ footer a {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
-.home-intro-text {
-    font-size: 1.3rem;
+.home-intro-text-container {
     width: 70%;
     padding-left: 1rem;
-    line-height: 2rem;
+}
+.home-intro-text  {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
 }
 
 /* Dog profiles */
@@ -208,6 +222,7 @@ footer a {
     text-align: center;
     width: 100%;
     padding: 1rem;
+    font-size: 1rem;
 }
 em {
     font-style: normal;
@@ -222,6 +237,7 @@ em {
     font-weight: bold;
     text-decoration: none;
     margin: 0 40%;
+    font-size: 1rem;
 }
 
 /* Blog Page */
@@ -234,39 +250,29 @@ em {
 }
 .blog-post {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
 }
 .blog-post img {
-    max-height: 300px;
-    min-width: 50px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
 } 
 .blog-text {
     width: 70%;
     padding-left: 1rem;
+    
 }  
-.blog-text h3 {
+.blog-text h2 {
     margin: 0;
 }
 .blog-post p {
     margin-bottom: 0;
+    line-height: 1.8rem;
 }
 
 /* Checkout Page */
-.checkout-form {
-    display: grid;
-    grid-template-areas: "name name name"
-                        "email email email"
-                        "address address address"
-                        "city state zip"
-                        "first-time . ."
-                        "pickup pickup ."
-                        "submit submit .";
-    row-gap: 2rem; 
-    column-gap: .5rem;                   
-}
 label {
     color:#264d73;
     font-size: 1.5rem;
@@ -278,6 +284,18 @@ input {
 }
 select {
     font-size: 1.5rem;
+}
+.checkout-form {
+    display: grid;
+    grid-template-areas: "name name name"
+                        "email email email"
+                        "address address address"
+                        "city state zip"
+                        "first-time . ."
+                        "pickup pickup ."
+                        "submit submit .";
+    row-gap: 2rem; 
+    column-gap: .5rem;                   
 }
 .yes-no {
     padding-right: 1rem;
