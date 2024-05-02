@@ -17,12 +17,14 @@ main {
     grid-area: main;
     margin: 2rem 10%;
 }
+
 h1 {
-    color: #132639;
+    color: #264d73;
 }
+/* Footer */
 footer {
     grid-area: footer;
-    background-color: #132639;
+    background-color: #264d73;
     width: 100%;
     color: white;
     text-align: center;
@@ -67,6 +69,8 @@ footer a {
     content: none;
 }
 
+
+/* Header */
 .header-img-container {
     background-image: url(images/header-image.jpg);
     min-height: 400px;
@@ -87,7 +91,7 @@ footer a {
     height: 10rem;
 }
 .header-text {
-    color: greenyellow;
+    color: #80bf40;
     font-size: 1rem;
     font-style: italic;
 }
@@ -98,7 +102,7 @@ footer a {
     text-align: left;
     top: 400px;
     width: 100%;
-    background: lightgrey;
+    background: #e6e6e6;
 }
 .main-navigation ul {
     list-style-type: none;
@@ -108,7 +112,7 @@ footer a {
 }
 .main-navigation a {
     text-decoration: none;
-    color: #132639;
+    color: #264d73;
     padding: 1rem 1.5rem;
     font-weight: bold;
 }
@@ -121,7 +125,7 @@ footer a {
 .main-navigation li:last-of-type:after {
     content: none;
 }
-
+/* Homepage */
 .home-intro-container {
     display: flex;
     justify-content: space-between;
@@ -138,53 +142,57 @@ footer a {
     padding-left: 1rem;
 }
 
+/* Dog profiles */
 .dogs-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 0;
     margin: 2rem 0;
 }
-.dogs-container li {
-    list-style-type: none;
-}
 .dogs-profile-box {
-    width: 20%;
-    border: 2px solid lightgrey;
+    list-style-type: none;
+    width: 22%;
+    border: 2px solid #e6e6e6;
 }
-.dogs-profile-box img{ 
+.dogs-profile-box img { 
     width: 100%;
     height: 150px;
     object-fit: cover;
-    position: relative;
 }
 .dogs-profile-text {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 .dogs-profile-text h2 {
-    color: #132639;
+    color: #264d73;
+    margin: 0 0 .5rem 0;
 }
-.dogs-profile-text a {
+.dogs-profile-box a {
+    display: block;
     color: white;
     font-weight: bold;
-    background-color: greenyellow;
+    background-color: #80bf40;
     text-decoration: none;
     text-align: center;
+    width: 100%;
+    padding: .5rem 0;
+    
 }
+
 .more-dogs-button {
+    display: block;
     padding: 1rem;
-    background-color: lightgrey;
-    color: #132639;
+    background-color: #e6e6e6;
+    color: #264d73;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    align-self: center;
 }
+
+/* Blog Page */
 .blog-post-container {
     display: flex;
     flex-direction: column;
