@@ -20,7 +20,10 @@ main {
 
 h1 {
     color: #264d73;
+    font-size: 2rem;
 }
+
+
 /* Footer */
 footer {
     grid-area: footer;
@@ -95,6 +98,8 @@ footer a {
     font-size: 1rem;
     font-style: italic;
 }
+
+/* Checkout in header */
 .checkout {
     position: absolute;
     top: 10%;
@@ -113,7 +118,7 @@ footer a {
     padding: 1rem 3rem;
 }
 
-/* Main Navigation Bar*/
+/* Main Navigation Bar */
 .main-navigation {
     position: absolute;
     text-align: left;
@@ -182,23 +187,28 @@ footer a {
 .dogs-profile-text {
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
 }
 .dogs-profile-text h2 {
     color: #264d73;
-    margin: 0 0 .5rem 0;
+    margin: 0;
 }
-.dogs-profile-box a {
+.dogs-profile-text a {
     display: block;
     color: white;
     font-weight: bold;
     background-color: #80bf40;
     text-decoration: none;
     text-align: center;
-    width: 100%;
-    padding: .5rem 0;
+    width: 80%;
+    padding: .5rem 1rem;
+    margin: 0 1rem 1rem;
     
 }
-
+em {
+    font-style: normal;
+    font-weight: bold;
+}
 .more-dogs-button {
     display: block;
     padding: 1rem;
@@ -237,4 +247,9 @@ footer a {
 }
 .blog-post p {
     margin-bottom: 0;
+}
+
+label {
+    color:#264d73;
+    font-size: 1.5rem;
 }
