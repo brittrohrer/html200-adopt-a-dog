@@ -95,6 +95,23 @@ footer a {
     font-size: 1rem;
     font-style: italic;
 }
+.checkout {
+    position: absolute;
+    top: 10%;
+    left: 80%;    
+}
+.fa-cart-shopping {
+    color: white;
+    height: 30px;
+    padding-bottom: 2rem;
+}
+.checkout a {
+    color: white;
+    font-weight: bold;
+    background-color: #80bf40;
+    text-decoration: none;
+    padding: 1rem 3rem;
+}
 
 /* Main Navigation Bar*/
 .main-navigation {
