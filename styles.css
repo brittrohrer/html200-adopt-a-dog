@@ -8,6 +8,7 @@ body {
                         "footer footer footer";
     row-gap: 1rem;
     margin: 0;
+    font-family:'Times New Roman', Times, serif;
 }
 header {
     grid-area: header;
@@ -103,11 +104,12 @@ footer a {
 .checkout {
     position: absolute;
     top: 10%;
-    left: 80%;    
+    left: 80%; 
+    text-align: right;   
 }
 .fa-cart-shopping {
     color: white;
-    height: 30px;
+    font-size: 2rem;
     padding-bottom: 2rem;
 }
 .checkout a {
@@ -115,7 +117,7 @@ footer a {
     font-weight: bold;
     background-color: #80bf40;
     text-decoration: none;
-    padding: 1rem 3rem;
+    padding: .5rem 3rem;
 }
 
 /* Main Navigation Bar */
@@ -154,21 +156,22 @@ footer a {
     width: 100%;
 }
 .home-intro-img {
-    max-width: 30%;
-    max-height: 300px;
+    max-width: 35%;
     aspect-ratio: 1/1;
-    object-fit: cover;
+    object-fit: contain;
 }
 .home-intro-text {
+    font-size: 1.3rem;
     width: 70%;
     padding-left: 1rem;
+    line-height: 2rem;
 }
 
 /* Dog profiles */
 .dogs-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 0;
@@ -176,9 +179,9 @@ footer a {
 }
 .dogs-profile-box {
     list-style-type: none;
-    width: 22%;
-    min-height: max-content;
+    width: 15rem;
     border: 2px solid #e6e6e6;
+    padding-bottom: 1rem;
 }
 .dogs-profile-box img { 
     width: 100%;
@@ -188,7 +191,7 @@ footer a {
 .dogs-profile-text {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem 1rem;
+    padding: 0 1rem;
 }
 .dogs-profile-text h2 {
     color: #264d73;
@@ -216,6 +219,7 @@ em {
     text-align: center;
     font-weight: bold;
     text-decoration: none;
+    margin: 0 40%;
 }
 
 /* Blog Page */
