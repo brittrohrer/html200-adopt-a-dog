@@ -168,7 +168,7 @@ footer a {
 .dogs-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding: 0;
@@ -177,6 +177,7 @@ footer a {
 .dogs-profile-box {
     list-style-type: none;
     width: 22%;
+    min-height: max-content;
     border: 2px solid #e6e6e6;
 }
 .dogs-profile-box img { 
@@ -187,7 +188,7 @@ footer a {
 .dogs-profile-text {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
 }
 .dogs-profile-text h2 {
     color: #264d73;
@@ -200,10 +201,8 @@ footer a {
     background-color: #80bf40;
     text-decoration: none;
     text-align: center;
-    width: 80%;
-    padding: .5rem 1rem;
-    margin: 0 1rem 1rem;
-    
+    width: 100%;
+    padding: 1rem;
 }
 em {
     font-style: normal;
@@ -249,7 +248,69 @@ em {
     margin-bottom: 0;
 }
 
+/* Checkout Page */
+.checkout-form {
+    display: grid;
+    grid-template-areas: "name name name"
+                        "email email email"
+                        "address address address"
+                        "city state zip"
+                        "first-time . ."
+                        "pickup pickup ."
+                        "submit submit .";
+    row-gap: 2rem; 
+    column-gap: .5rem;                   
+}
 label {
     color:#264d73;
     font-size: 1.5rem;
+    font-weight: bold;
+}
+input {
+    font-size: 1.5rem;
+    border: 2px solid #e6e6e6;
+}
+select {
+    font-size: 1.5rem;
+}
+.yes-no {
+    padding-right: 1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.name {
+    grid-area: name;
+}
+.email {
+    grid-area: email;
+}
+.address {
+    grid-area: address;
+}
+.city {
+    grid-area: city;
+}
+.state {
+    grid-area: state;
+}
+.zip {
+    grid-area: zip;
+}
+.first-time {
+    grid-area: first-time;
+}
+.pickup {
+    grid-area: pickup;
+}
+.submit {
+    grid-area: submit;
+}
+.submit-button {
+    background-color: #80bf40;
+    color: white;
+    border: none;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
