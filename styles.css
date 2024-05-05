@@ -66,10 +66,17 @@ p {
     right: 3%; 
     text-align: right;   
 }
-.fa-cart-shopping {
-    color: white;
-    font-size: 2rem;
-    padding-bottom: 2rem;
+.icon-price {
+    padding-bottom: 1rem;
+}
+.cart-icon {
+    width: 3rem;
+    padding-right: 1rem;
+}
+.header-price {
+    color: #ffffff;
+    display: inline;
+    font-weight: bold;
 }
 .checkout a {
     color: white;
