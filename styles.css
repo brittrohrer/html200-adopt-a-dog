@@ -289,7 +289,7 @@ input {
     font-size: 1.5rem;
     border: 2px solid #e6e6e6;
 }
-input:not(.first-time-check) {
+input:not(.first-time-check, .submit-button) {
     width: 100%;
 }
 select {
