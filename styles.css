@@ -289,6 +289,9 @@ input {
     font-size: 1.5rem;
     border: 2px solid #e6e6e6;
 }
+input:not(.first-time-check) {
+    width: 100%;
+}
 select {
     font-size: 1.5rem;
 }
