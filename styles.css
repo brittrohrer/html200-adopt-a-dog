@@ -333,7 +333,7 @@ select {
     gap: 1rem;
 }
 .adopted-dog-img {
-    max-width: 40%;
+    max-width: 8rem;
     object-fit: cover;
 }
 .dog-name {
