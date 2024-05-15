@@ -1,1 +1,0 @@
-an adoption source to browse available dogs and make an adoption
