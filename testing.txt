@@ -1,4 +1,4 @@
-User Persona:
+**User Persona:**
 
 -This is a website used for people (most likely located in the Seattle area, but not limited to) looking to adopt a dog.
 -The users are going to be a range from young adult to older adult/seniors.
@@ -9,9 +9,9 @@ User Persona:
 
 
 
-Website QA Testing
+**Website QA Testing**
 
-Visual Testing:
+__Visual Testing:__
 The website has been tested in many ways ensure the best user experience possible. Some of the first things tested for was visual consistency. Font style, size and colors were found consistent across all web pages. The same was observed for links. Each web page also maintained consistent alignment, spacing, padding, and margins. All images and visuals were visible and remained in their correct location even as the window size changes.
 
 Functional Testing:
