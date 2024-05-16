@@ -5,10 +5,10 @@
 A pet adoption site where the user can browse dogs available for adoption in Seattle. This website was designed for users to easily access and operate.
 
 ## Screenshots
-![image](images/readme-home.png)
-![image](images/readme-dogs.png)
-![image](images/readme-blog.png)
-![image](images/readme-checkout.png)
+![image](images/readme-home.jpg)
+![image](images/readme-dogs.jpg)
+![image](images/readme-blog.jpg)
+![image](images/readme-checkout.jpg)
 ## Supported Browsers
 
 Google Chrome
