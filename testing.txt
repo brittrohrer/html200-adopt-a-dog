@@ -73,4 +73,4 @@ The Google Chrome Lighthouse tool was ran to test things like performance, SEO, 
 Performance scored a 92 and noted a few things that could use improvement. These include decreasing the time for the 
 largest text and images to be displayed and using image formats that provide faster downloads and less data usage/
 SEO scored a 92 and noted that the documents do not include a meta description. Accessibility scored a 100 along with 
-best practices.
+best practices. 
