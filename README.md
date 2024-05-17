@@ -12,15 +12,15 @@ A pet adoption site where the user can browse dogs available for adoption in Sea
 
 ## Supported Browsers
 This website is compatible with:
--Google Chrome
--Firefox
--Safari
--Microsoft Edge
+- Google Chrome
+- Firefox
+- Safari
+- Microsoft Edge
 
 ## Creation
 This website was created using:
--HTML5 
--CSS
+- HTML5 
+- CSS
 
 ## Link to website
 
