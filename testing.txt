@@ -63,5 +63,6 @@ devices like mobile, desktop, and tablets.
 	  This resulted in the arrow covering a small portion of the text.
 
 Mobile Device Testing:
+
 The website was also tested on an actual android mobile device (Galaxy S22). It was an expected experience and performed as it did during 
 the emulator. It was clear that the layout does need to be adjusted for smaller screen sizes.
