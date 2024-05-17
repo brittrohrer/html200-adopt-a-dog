@@ -9,18 +9,19 @@ A pet adoption site where the user can browse dogs available for adoption in Sea
 ![image](images/readme-dogs.jpg)
 ![image](images/readme-blog.jpg)
 ![image](images/readme-checkout.jpg)
-## Supported Browsers
 
-Google Chrome
-Firefox
-Safari
-Microsoft Edge
+## Supported Browsers
+This website is compatible with:
+-Google Chrome
+-Firefox
+-Safari
+-Microsoft Edge
 
 ## Creation
-This website was created using 
-HTML5 
-CSS
+This website was created using:
+-HTML5 
+-CSS
 
 ## Link to website
 
-https://brittrohrer.github.io/html200-adopt-a-dog/
+[Adopt-A-Dog Website](https://brittrohrer.github.io/html200-adopt-a-dog/)
