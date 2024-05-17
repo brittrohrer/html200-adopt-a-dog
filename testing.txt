@@ -63,5 +63,14 @@ devices like mobile, desktop, and tablets.
 	  This resulted in the arrow covering a small portion of the text.
 
 Mobile Device Testing:
+
 The website was also tested on an actual android mobile device (Galaxy S22). It was an expected experience and performed as it did during 
 the emulator. It was clear that the layout does need to be adjusted for smaller screen sizes.
+
+Chrome Lighthouse Report:
+
+The Google Chrome Lighthouse tool was ran to test things like performance, SEO, accessibility, and best practices.
+Performance scored a 92 and noted a few things that could use improvement. These include decreasing the time for the 
+largest text and images to be displayed and using image formats that provide faster downloads and less data usage/
+SEO scored a 92 and noted that the documents do not include a meta description. Accessibility scored a 100 along with 
+best practices.
