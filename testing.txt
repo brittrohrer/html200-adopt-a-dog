@@ -1,7 +1,7 @@
 User Persona:
 
 -This is a website used for people (most likely located in the Seattle area, but not limited to) looking to adopt a dog.
--The users are going to be a range from young adult to older adult/seniors.
+-The os a range of users from young adult to older adult/seniors.
 -Because of the age range of users and technology using ability, the website needs to be easily navigated.
 -The users of the website will be using a range of devices including desktop, laptops, tablets, and mobile devices. 
 -Both older and new technology will be used as some users may be using their older outdated devices or new up-to-date 
@@ -15,33 +15,33 @@ Website QA Testing
 
 Visual Testing:
 
-The website has been tested in many ways ensure the best user experience possible. Some of the first things tested for was 
-visual consistency. Font style, size and colors were found consistent across all web pages. The same was observed for links. 
-Each web page also maintained consistent alignment, spacing, padding, and margins. All images and visuals were visible and 
-remained in their correct location even as the window size changes.
+The website has been tested in a variety of ways to ensure the best experience possible for its users. Some of the first things tested was 
+visual consistency. Font style, size and colors was found consistent across all web pages. The same was observed for the links. 
+Each web page also maintained consistent alignment, spacing, padding, and margins. All images were visible and remained in their correct 
+location even as the window size changed.
 
 Functional Testing:
 
 Next, the website was tested to make sure the features worked as the user would expect. First each link was tested to verify 
-its destination. The CSS and HTML pages all passed a code validator. The form also was tested and shows the user when a required 
+its destination. The CSS and HTML pages all passed a code validator. The form was also tested and shows the user when a required 
 box has not been filled.
 
 Accessibility Testing:
 
-Because many people in the world live with some form of disability, the website was tested for accessibility. The website did not 
-pass some accessibility tests, so the some colors and hover features were changed in order to pass. Each page was tested with different 
-levels of zoom to make sure the web pages were still fully visible and functions. All the images contain detailed alt text for visually 
-impaired users 
+Because many people in the world live with a disability, the website was tested for accessibility. The website did not 
+pass some accessibility tests, so the some of the colors and hover features were changed in order to pass. Each page was tested with different 
+levels of zoom to make sure the web pages were still fully visible and functional. All the images contain detailed alt text for visually 
+impaired users relying on screen readers.
 
 Responsive and Cross-Browser Testing:
 
 The website was opened in 3 different web browsers including Firefox, Google Chrome, and Safari on MacOS. All 3 browsers showed 
 similar experiences. 
--The layout is fluid and well centered. When adjusting the window size, the content fit within the viewing port size. Text size 
-  remained legible and shifted so it isn’t hidden (there is no scrolling horizontally to view hidden content).
+-The layout is fluid and well centered. When adjusting the window size, the content fit within the viewport size. Text size 
+  remained legible and shifted to remain visible.
 -Each browser maintains sufficient padding and margins.
 -Some changes that could be made is better breakpoints for certain viewport sizes. May want to use a different 
-  layout for smaller screen sizes. Some content would benefit from moving the text placed to the side of an image to underneath 
+  layout for smaller screen sizes. Some web pages would benefit from moving the text placed on the side of an image to underneath 
   the image so the image can maintain its size.
 
 Emulator Responsive Testing:
@@ -58,19 +58,19 @@ devices like mobile, desktop, and tablets.
 	Safari:
 	-Using the emulator in Safari, the mobile devices tested were iPhone 8 and iPhone SE. Because there was no access to a different 
 	  operating system, Safari’s developer tools offer an option of viewing the website from different operating systems with the emulator. 
-	  Here the website was viewed on each of the 3 browsers inanition to Microsoft Edge on both MacOS and Windows. One key thing to note 
+	  Here the website was viewed on each of the 3 browsers and Microsoft Edge on both MacOS and Windows. One key thing to note 
 	  about the windows operating system on each browser was the space between the drop-down arrow and the menu choice was very short. 
 	  This resulted in the arrow covering a small portion of the text.
 
 Mobile Device Testing:
 
-The website was also tested on an actual android mobile device (Galaxy S22). It was an expected experience and performed as it did during 
-the emulator. It was clear that the layout does need to be adjusted for smaller screen sizes.
+The website was also tested on an actual android mobile device (Galaxy S22). It performed as it did during 
+the emulator. It was clear, during the test, that the layout does need to be adjusted for smaller screen sizes.
 
 Chrome Lighthouse Report:
 
 The Google Chrome Lighthouse tool was ran to test things like performance, SEO, accessibility, and best practices.
-Performance scored a 92 and noted a few things that could use improvement. These include decreasing the time for the 
-largest text and images to be displayed and using image formats that provide faster downloads and less data usage/
+Performance scored a 92 and noted a few things that could use improvement. These included decreasing the time for the 
+largest text and images to be displayed and using image formats that provide faster downloads and have less data usage.
 SEO scored a 92 and noted that the documents do not include a meta description. Accessibility scored a 100 along with 
 best practices. 
