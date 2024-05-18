@@ -12,7 +12,10 @@
 A pet adoption site where the user can browse dogs available for adoption in Seattle. This website was designed for users to easily access and operate.
 <a name="screenshots"></a>
 ## Screenshots
-![image](images/readme-home.jpg =x20) ![image](images/readme-dogs.jpg =x20) ![image](images/readme-blog.jpg =x20) ![image](images/readme-checkout.jpg x=20)
+<img src="images/readme-home.jpg" width="20"> 
+<img src="images/readme-dogs.jpg" width="20">
+<img src="images/readme-blog.jpg" width="20">
+<img src="images/readme-checkout.jpg" width="20">
 <a name="compatability"></a>
 ## Compatability
 This website is compatible with:
