@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [Description](#description)
 2. [Screenshots](#screenshots)
-3. [Compatability](#compatability)
+3. [Compatibility](#compatibility)
 4. [Creation](#creation)
 5. [Testing](#testing)
 6. [Links](#links)
@@ -16,8 +16,8 @@ A pet adoption site where the user can browse dogs available for adoption in Sea
 ![dogs page screenshot](images/readme-dogs.jpg)
 ![blog page screenshot](images/readme-blog.jpg)
 ![checkout page screenshot](images/readme-checkout.jpg)
-<a name="compatability"></a>
-## Compatability
+<a name="compatibility"></a>
+## Compatibility
 This website is compatible with:
 - Google Chrome
 - Firefox
