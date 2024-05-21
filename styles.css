@@ -52,7 +52,7 @@ p {
     max-width: 30rem;
 }
 .header-text {
-    color: #80bf40;
+    color: #57822B;
     font-size: 1.8rem;
     font-style: italic;
     margin-top: 0;
@@ -81,9 +81,13 @@ p {
 .checkout a {
     color: white;
     font-weight: bold;
-    background-color: #80bf40;
+    background-color: #57822B;
     text-decoration: none;
     padding: .5rem 3rem;
+}
+.checkout a:hover {
+    background-color: #ffffff;
+    color: #57822B;
 }
 
 /* Main Navigation Bar */
@@ -106,7 +110,9 @@ p {
     color: #264d73;
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 1rem;
 }
+
 .main-navigation li:after {
     content: "/";
     padding: 1rem;
@@ -115,6 +121,10 @@ p {
 }
 .main-navigation li:last-of-type:after {
     content: none;
+}
+.main-navigation a:hover {
+    background-color: #264d73;
+    color: #ffffff;
 }
 
 /* Footer */
@@ -153,6 +163,10 @@ footer a {
     font-weight: bold;
     padding: 1rem;
     font-size: 1rem;
+}
+footer a:hover {
+    background-color: #ffffff;
+    color: #264d73;
 }
 .location {
     display: inline;
@@ -224,12 +238,17 @@ footer a {
     display: block;
     color: white;
     font-weight: bold;
-    background-color: #80bf40;
+    background-color: #57822B;
     text-decoration: none;
     text-align: center;
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
+}
+.dogs-profile-text a:hover {
+    background-color: #ffffff;
+    color: #57822B;
+    border: 3px solid #57822B;
 }
 em {
     font-style: normal;
@@ -245,6 +264,10 @@ em {
     text-decoration: none;
     margin: 0 40%;
     font-size: 1rem;
+}
+.more-dogs-button:hover {
+    background-color: #264d73;
+    color: #e6e6e6;
 }
 
 /* Blog Page */
@@ -350,7 +373,7 @@ select {
     font-size: 1.5rem;
 }
 .submit-button {
-    background-color: #80bf40;
+    background-color: #57822B;
     color: white;
     border: none;
     padding: 1rem 4rem;
