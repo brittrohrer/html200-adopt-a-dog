@@ -248,7 +248,7 @@ footer a:hover {
 .dogs-profile-text a:hover {
     background-color: #ffffff;
     color: #57822B;
-    border: 3px solid #57822B;
+    outline: 3px solid #57822B;
 }
 em {
     font-style: normal;
