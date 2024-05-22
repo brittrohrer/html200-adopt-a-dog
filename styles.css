@@ -381,7 +381,7 @@ select {
     font-weight: bold;
 }
 
-@media only screen and (orientation: portrait) and (max-width: 600px) {
+@media only screen and (orientation: portrait) and (max-width: 900px) {
     .blog-post {
         flex-direction: column;
     }
