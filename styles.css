@@ -112,7 +112,6 @@ p {
     font-weight: bold;
     padding: 1rem;
 }
-
 .main-navigation li:after {
     content: "/";
     padding: 1rem;
@@ -217,7 +216,7 @@ footer a:hover {
 .dogs-profile-box {
     list-style-type: none;
     width: 17rem;
-    border: 2px solid #e6e6e6;
+    outline: 2px solid #e6e6e6;
     padding-bottom: 1rem;
 }
 .dogs-profile-box img { 
@@ -233,6 +232,11 @@ footer a:hover {
 .dogs-profile-text h2 {
     color: #264d73;
     margin: 0;
+}
+.dogs-profile-text p {
+    margin: 0;
+    padding: .4rem 0;
+    line-height: 1.3rem;
 }
 .dogs-profile-text a {
     display: block;
