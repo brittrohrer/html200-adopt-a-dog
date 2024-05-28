@@ -423,7 +423,7 @@ select {
     margin-top: 1rem;
 }
 .send-button:hover {
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     color: #57822B;
     outline: 3px solid #57822B;
 }
