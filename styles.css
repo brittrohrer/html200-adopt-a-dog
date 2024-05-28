@@ -385,6 +385,17 @@ select {
     font-weight: bold;
 }
 
+/* Contact Page */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    display: block;
+    width: 100%;
+}
+
+
 @media only screen and (orientation: portrait) and (max-width: 900px) {
     .blog-post {
         flex-direction: column;

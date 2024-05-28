@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-img-container">
+            <div class="header-text-container">
+                <img src="images/adoptadog-logo.svg" alt="logo with dog and name">
+                <p class="header-text">Seattle's Premiere dog adoption agency</p>
+            </div>
+        </div>
+
+        <!-- Placeholder to function later-->
+        <aside class="checkout">
+            <div class="icon-price">
+                <img class="cart-icon" src="images/cart-icon.svg" alt="shopping cart icon">
+                <p class="header-price">$1234.56</p>
+            </div>
+            <a href="checkout.html">Checkout</a>
+        </aside>
+        <!--End of placeholder-->
+        
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <form class="contact-form">
+            <div>
+                <label for="contact-name">Name:</label><br>
+                <input type="text" name="contact-name" required><br> 
+            </div>
+            <div>
+                <label for="contact-email">Email Address:</label>
+                <input type="email" name="contact-email" required> 
+            </div>
+           
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            </div>
+            <div>
+                <label for="contact-preferred">Preferred Method for Contact:</label><br>
+                <select name="contact-preferred">
+                    <option value="">--Select Method--</option>
+                    <option value="method-call">Call</option>
+                    <option value="method-text">Text</option>
+                    <option value="method-email">Email</option>
+                </select><br>
+            </div>
+
+            <label>Message:
+                <textarea class="message" name="message" rows="10">
+                </textarea>
+            </label>
+
+            <div class="send">
+                <input class="send-button" type="submit" value="Send">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img src="images/adoptadog-logo.svg" alt="logo with dog and name">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="location">&copy;2018 Adoptadog, LLC</p>
+        <p class="location">Seattle, WA</p>
+    </footer>
+</body>
+</html>
