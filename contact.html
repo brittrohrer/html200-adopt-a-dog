@@ -34,8 +34,8 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Contact</h1>
+    <main class="contact-page">
+        <h1>Contact Us</h1>
         <form class="contact-form">
             <div>
                 <label for="contact-name">Name:</label><br>
@@ -50,14 +50,14 @@
                 <label for="phone">Phone Number:</label>
                 <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
             </div>
-            <div>
-                <label for="contact-preferred">Preferred Method for Contact:</label><br>
-                <select name="contact-preferred">
-                    <option value="">--Select Method--</option>
-                    <option value="method-call">Call</option>
-                    <option value="method-text">Text</option>
-                    <option value="method-email">Email</option>
-                </select><br>
+            <div class="contact-method">
+                <p>Preferred Method for Contact:</p>
+                <input type="radio" id="call" name="contact-preferred" value="Call">
+                <label for="call">Call</label><br>
+                <input type="radio" id="text" name="contact-preferred" value="Text">
+                <label for="text">Text</label><br>
+                <input type="radio" id="email" name="contact-preferred" value="Email">
+                <label for="email">Email</label><br>
             </div>
 
             <label>Message:
