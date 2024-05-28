@@ -393,17 +393,17 @@ select {
 .contact-page div {
     margin-bottom: 1rem;
 }
-.contact-method input {
+.contact-select input {
     display: inline;
     width: auto;
 }
-.contact-method label {
+.contact-select label {
     display: inline;
     font-size: 1.2rem;
     font-weight: normal;
     color: black;
 }
-.contact-method p {
+.contact-select p {
     font-size: 1.5rem;
     font-weight: bold;
     color: #264d73;

@@ -41,6 +41,7 @@
                 <label for="contact-name">Name:</label><br>
                 <input type="text" id="contact-name" name="contact-name" required><br> 
             </div>
+            
             <div>
                 <label for="contact-email">Email Address:</label>
                 <input type="email" id="contact-email" name="contact-email" required> 
@@ -50,7 +51,8 @@
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
             </div>
-            <div class="contact-method">
+
+            <div class="contact-select">
                 <p>Preferred Method for Contact:</p>
                 <input type="radio" id="call" name="contact-preferred" value="Call">
                 <label for="call">Call</label><br>
@@ -60,11 +62,22 @@
                 <label for="email">Email</label><br>
             </div>
 
-            <label>Message:
-                <textarea class="message" name="message" rows="10">
-                </textarea>
-            </label>
+            <div>
+                <label>Message:
+                    <textarea class="message" name="message" rows="10">
+                    </textarea>
+                </label>
+            </div>    
 
+            <div class="contact-select">
+                <p>What e-mails would you like to recieve?</p>
+                <input type="checkbox" id="updated-dogs" name="updated-dogs" value="Dogs">
+                <label for="updated-dogs"> New dogs available for adoption</label><br>
+                <input type="checkbox" id="blogs" name="blogs" value="Blogs">
+                <label for="no-email"> New blog articles</label><br>
+                <input type="checkbox" id="no-email" name="no-email" value="No-Email">
+                <label for="no-email"> I do not want to receive any emails</label>
+            </div>
             <div class="send">
                 <input class="send-button" type="submit" value="Send">
             </div>
