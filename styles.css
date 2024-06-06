@@ -238,7 +238,7 @@ footer a:hover {
     padding: .4rem 0;
     line-height: 1.3rem;
 }
-.dogs-profile-text a {
+.dogs-profile-text button {
     display: block;
     color: white;
     font-weight: bold;
@@ -249,7 +249,7 @@ footer a:hover {
     padding: 1rem;
     font-size: 1rem;
 }
-.dogs-profile-text a:hover {
+.dogs-profile-text button:hover {
     background-color: #ffffff;
     color: #57822B;
     outline: 3px solid #57822B;
