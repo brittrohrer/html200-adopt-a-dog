@@ -385,6 +385,50 @@ select {
     font-weight: bold;
 }
 
+/* Contact Page */
+.contact-page {
+    background-color: #e6e6e6;
+    padding: 1rem;
+}
+.contact-page div {
+    margin-bottom: 1rem;
+}
+.contact-select input {
+    display: inline;
+    width: auto;
+}
+.contact-select label {
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: black;
+}
+.contact-select p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #264d73;
+    margin: 0;
+}
+.message {
+    display: block;
+    width: 100%;
+}
+.send-button {
+    background-color: #57822B;
+    color: white;
+    border: none;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.send-button:hover {
+    background-color: #ffffff;
+    color: #57822B;
+    outline: 3px solid #57822B;
+}
+
+
 @media only screen and (orientation: portrait) and (max-width: 900px) {
     .blog-post {
         flex-direction: column;
