@@ -33,7 +33,7 @@ p {
 
 /* Header */
 .header-img-container {
-    background-image: url(images/header-image.jpg);
+    background-image: url(../images/header-image.jpg);
     min-height: 400px;
     background-position: top;
     background-repeat: no-repeat;
