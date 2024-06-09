@@ -12,4 +12,5 @@ function adoptCost(price, quantity) {
     total = cost + total;
     alert('Fee = $' + cost + '\n' + 'New Total: $' + total);
     output.innerHTML = '$' + total;
+    return total;
 }
