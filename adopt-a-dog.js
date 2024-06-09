@@ -14,3 +14,17 @@ function adoptCost(price, quantity) {
     output.innerHTML = '$' + total;
     return total;
 }
+
+let theParent = document.querySelector("#buttonParent");
+theParent.addEventListener("click", selectButton, false);
+
+function selectButton(e) {
+    if (e.target !== e.currentTarget) {
+        let clickedButton = e.target.id;
+        console.log(clickedButton);
+        
+    }
+    e.target.disabled = true;
+    e.target.innerText = 'Adopted';
+    e.target.style.background = 'red';
+}
