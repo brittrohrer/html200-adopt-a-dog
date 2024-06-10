@@ -19,7 +19,7 @@
         <aside class="checkout">
             <div class="icon-price">
                 <img class="cart-icon" src="./images/cart-icon.svg" alt="shopping cart icon">
-                <p class="header-price">$1234.56</p>
+                <p  id="output" class="header-price">$1234.56</p>
             </div>
             <a href="checkout.html">Checkout</a>
         </aside>
@@ -47,9 +47,9 @@
         </article> 
 
         <article>
-            <ul class="dogs-container">
+            <ul class="dogs-container" id="buttonParent">
                 <li class="dogs-profile-box">
-                    <img src="./images/murphy-card.jpg" alt="golden brown dog with white on nose">
+                    <img src="./images/murphy-card.jpg" alt="golden brown dog with white on nose" onclick="dogInfo('Murphy', 'Mut', '123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Murphy</h2>
@@ -57,11 +57,11 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                                nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>  
                         </div>
-                        <button class="btn" id="murphy">Adopt</button>
+                        <button class="btn" id="murphy" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>  
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="./images/poppy-card.jpg" alt="scruffy white and grey dog">
+                    <img src="./images/poppy-card.jpg" alt="scruffy white and grey dog" onclick="dogInfo('Poppy', 'Shih Tzus', '123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Poppy</h2>
@@ -69,11 +69,11 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
                         </div>
-                        <button class="btn" id="poppy">Adopt</button>  
+                        <button class="btn" id="poppy" onclick="adoptCost(123.45, 1)">Adopt</button>  
                     </div>  
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="./images/jack-card.jpg" alt="brown and white begal">
+                    <img src="./images/jack-card.jpg" alt="brown and white begal" onclick="dogInfo('Jack', 'Beagle', '123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Jack</h2>
@@ -81,11 +81,11 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
                         </div>
-                        <button class="btn" id="jack">Adopt</button> 
+                        <button class="btn" id="jack" onclick="adoptCost(123.45, 1)">Adopt</button> 
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="./images/duffy-checkout.jpg" alt="gold and white dog with blue eyes and floppy ears">
+                    <img src="./images/duffy-checkout.jpg" alt="gold and white dog with blue eyes and floppy ears" onclick="dogInfo('Duffy', 'Staffordshire Bull Terrier', '123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Duffy</h2>
@@ -93,11 +93,11 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
                         </div>
-                        <button class="btn" id="duffy">Adopt</button>
+                        <button class="btn" id="duffy" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="./images/lucas-checkout.jpg" alt="black and white dog with light brown eyes">
+                    <img src="./images/lucas-checkout.jpg" alt="black and white dog with light brown eyes" onclick="dogInfo('Lucas', 'Black Lab', '123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Lucas</h2>
@@ -105,11 +105,11 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
                         </div>
-                        <button class="btn" id="lucas">Adopt</button>
+                        <button class="btn" id="lucas" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div> 
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="./images/jake-card.jpg" alt="light tan dog">
+                    <img src="./images/jake-card.jpg" alt="light tan dog" onclick="dogInfo('Jake', 'Labrador Retriever', '123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Jake</h2>
@@ -117,11 +117,11 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
                         </div>
-                        <button class="btn" id="jake">Adopt</button>
+                        <button class="btn" id="jake" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="./images/angus-card.jpg" alt="brown dog with white down neck and stomach">
+                    <img src="./images/angus-card.jpg" alt="brown dog with white down neck and stomach" onclick="dogInfo('Angus','Boxer','123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Angus</h2>
@@ -129,11 +129,11 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
                         </div>
-                        <button class="btn" id="angus">Adopt</button>
+                        <button class="btn" id="angus" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="./images/violet-card.jpg" alt="dark brown puppy">
+                    <img src="./images/violet-card.jpg" alt="dark brown puppy" onclick="dogInfo('Violet','Brown Lab','123.45')">
                     <div class="dogs-profile-text">
                         <div>
                             <h2>Violet</h2>
@@ -141,7 +141,7 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
                         </div>
-                        <button class="btn" id="vio">Adopt</button>
+                        <button class="btn" id="vio" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
             </ul>
@@ -161,5 +161,6 @@
         <p class="location">&copy;2018 Adoptadog, LLC</p>
         <p class="location">Seattle, WA</p>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
