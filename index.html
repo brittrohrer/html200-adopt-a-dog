@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Adopt A Dog Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
     <header>
         <div class="header-img-container">
             <div class="header-text-container">
-                <img src="images/adoptadog-logo.svg" alt="logo with dog and name">
+                <img src="./images/adoptadog-logo.svg" alt="logo with dog and name">
                 <p class="header-text">Seattle's Premiere dog adoption agency</p>
             </div>
         </div>
@@ -18,8 +18,8 @@
         <!-- Placeholder to function later-->
         <aside class="checkout">
             <div class="icon-price">
-                <img class="cart-icon" src="images/cart-icon.svg" alt="shopping cart icon">
-                <p class="header-price">$1234.56</p>
+                <img class="cart-icon" src="./images/cart-icon.svg" alt="shopping cart icon">
+                <p  id="output" class="header-price">$1234.56</p>
             </div>
             <a href="checkout.html">Checkout</a>
         </aside>
@@ -35,7 +35,7 @@
     </header>
     <main>
         <article class="home-intro-container">
-            <img class="home-intro-img" src="images/home-intro.jpg" alt="guy hugging dog">
+            <img class="home-intro-img" src="./images/home-intro.jpg" alt="guy hugging dog">
             <div class="home-intro-text-container">
                 <h1>Adopt A Dog</h1>
                 <p class="home-intro-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis odio error quaerat architecto eaque dolor saepe similique, voluptas laudantium esse officiis accusantium quod magni 
@@ -47,85 +47,101 @@
         </article> 
 
         <article>
-            <ul class="dogs-container">
+            <ul class="dogs-container" id="buttonParent">
                 <li class="dogs-profile-box">
-                    <img src="images/murphy-card.jpg" alt="golden brown dog with white on nose">
+                    <img src="./images/murphy-card.jpg" alt="golden brown dog with white on nose" onclick="dogInfo('Murphy', 'Mut', '123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Murphy</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>    
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
-                            nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>  
-                        <a href="#">Adopt</a>
+                        <div>
+                            <h2>Murphy</h2>
+                            <p class="dog-cost"><em>Cost to adopt:</em> $123.45</p>    
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                               nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>  
+                        </div>
+                        <button class="btn" id="murphy" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>  
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="images/poppy-card.jpg" alt="scruffy white and grey dog">
+                    <img src="./images/poppy-card.jpg" alt="scruffy white and grey dog" onclick="dogInfo('Poppy', 'Shih Tzus', '123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Poppy</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                        <div>
+                            <h2>Poppy</h2>
+                            <p><em>Cost to adopt:</em> $123.45</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
-                        <a href="#">Adopt</a>  
+                        </div>
+                        <button class="btn" id="poppy" onclick="adoptCost(123.45, 1)">Adopt</button>  
                     </div>  
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="images/jack-card.jpg" alt="brown and white begal">
+                    <img src="./images/jack-card.jpg" alt="brown and white begal" onclick="dogInfo('Jack', 'Beagle', '123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Jack</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                        <div>
+                            <h2>Jack</h2>
+                            <p><em>Cost to adopt:</em> $123.45</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
-                        <a href="#">Adopt</a> 
+                        </div>
+                        <button class="btn" id="jack" onclick="adoptCost(123.45, 1)">Adopt</button> 
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="images/duffy-checkout.jpg" alt="gold and white dog with blue eyes and floppy ears">
+                    <img src="./images/duffy-checkout.jpg" alt="gold and white dog with blue eyes and floppy ears" onclick="dogInfo('Duffy', 'Staffordshire Bull Terrier', '123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Duffy</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                        <div>
+                            <h2>Duffy</h2>
+                            <p><em>Cost to adopt:</em> $123.45</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
-                        <a href="#">Adopt</a>
+                        </div>
+                        <button class="btn" id="duffy" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="images/lucas-checkout.jpg" alt="black and white dog with light brown eyes">
+                    <img src="./images/lucas-checkout.jpg" alt="black and white dog with light brown eyes" onclick="dogInfo('Lucas', 'Black Lab', '123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Lucas</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                        <div>
+                            <h2>Lucas</h2>
+                            <p><em>Cost to adopt:</em> $123.45</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
-                        <a href="#">Adopt</a>
+                        </div>
+                        <button class="btn" id="lucas" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div> 
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="images/jake-card.jpg" alt="light tan dog">
+                    <img src="./images/jake-card.jpg" alt="light tan dog" onclick="dogInfo('Jake', 'Labrador Retriever', '123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Jake</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                        <div>
+                            <h2>Jake</h2>
+                            <p><em>Cost to adopt:</em> $123.45</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
-                        <a href="#">Adopt</a>
+                        </div>
+                        <button class="btn" id="jake" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="images/angus-card.jpg" alt="brown dog with white down neck and stomach">
+                    <img src="./images/angus-card.jpg" alt="brown dog with white down neck and stomach" onclick="dogInfo('Angus','Boxer','123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Angus</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                        <div>
+                            <h2>Angus</h2>
+                            <p><em>Cost to adopt:</em> $123.45</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
-                        <a href="#">Adopt</a>
+                        </div>
+                        <button class="btn" id="angus" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
                 <li class="dogs-profile-box">
-                    <img src="images/violet-card.jpg" alt="dark brown puppy">
+                    <img src="./images/violet-card.jpg" alt="dark brown puppy" onclick="dogInfo('Violet','Brown Lab','123.45')">
                     <div class="dogs-profile-text">
-                        <h2>Violet</h2>
-                        <p><em>Cost to adopt:</em> $123.45</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
+                        <div>
+                            <h2>Violet</h2>
+                            <p><em>Cost to adopt:</em> $123.45</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque, eaque earum necessitatibus itaque ipsa, 
                             nihil enim rem natus sit porro labore. Quam nostrum veritatis dolorum fuga excepturi quibusdam! Nihil?</p>
-                        <a href="#">Adopt</a>
+                        </div>
+                        <button class="btn" id="vio" onclick="adoptCost(123.45, 1)">Adopt</button>
                     </div>
                 </li>
             </ul>
@@ -133,7 +149,7 @@
         </article>
     </main>
     <footer>
-        <img src="images/adoptadog-logo.svg" alt="logo with dog and name">
+        <img src="./images/adoptadog-logo.svg" alt="logo with dog and name">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         <nav>
             <ul>
@@ -145,5 +161,6 @@
         <p class="location">&copy;2018 Adoptadog, LLC</p>
         <p class="location">Seattle, WA</p>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
