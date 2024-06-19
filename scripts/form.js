@@ -2,7 +2,7 @@ let form = document.getElementById('contactFormParent');
 form.addEventListener('submit', submitButton);
 
 function submitButton(e) {
-    console.log('youve submitted');
+    alert('Thank You. The form information has been recieved.');
     e.preventDefault();
 }
     
