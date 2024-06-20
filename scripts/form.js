@@ -8,11 +8,12 @@ function submitButton(e) {
 }
 
 let inputsText = document.querySelectorAll('.form-text-input');
+let inputsId = document.querySelectorAll('.form-text-input');
 let inputsRadio = document.querySelectorAll('.form-input-radio');
 let inputsCheckbox = document.querySelectorAll('.form-input-checkbox');
 function inputsValue() {
     for (i = 0; i < inputsText.length; i++) {
-        console.log(inputsText[i].value);
+        console.log(`${inputsId[i].id}:  ${inputsText[i].value}`);
     }
     for (i = 0; i < inputsRadio.length; i++) {
         if (inputsRadio[i].checked) {
