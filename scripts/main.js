@@ -1,7 +1,12 @@
+// hide previous html
+document.getElementById('blog-main').style.display = "none";
+
+// create new header
 let mainTitle = document.createElement('h1');
 mainTitle.textContent = 'Adoptadog Blog';
 document.body.appendChild(mainTitle);
 
+// create blog posts objects
 let blogs = [
     {
         headline: 'Traveling with your dog',
@@ -35,6 +40,7 @@ let blogs = [
     }
 ];
 
+// display blog posts
 for (let i = 0; i < blogs.length; i++) {
     let blog = blogs[i];
 
@@ -52,3 +58,6 @@ for (let i = 0; i < blogs.length; i++) {
     mainTitle.appendChild(blogImage);
     mainTitle.appendChild(blogBlogText);
 }
+
+// style new elements
+mainTitle.setAttribute("style", "margin: 2rem 10rem");
