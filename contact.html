@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
-<body>
+<body onload="preSelect()">
     <header>
         <div class="header-img-container">
             <div class="header-text-container">
@@ -36,20 +36,20 @@
 
     <main class="contact-page">
         <h1>Contact Us</h1>
-        <form class="contact-form" id="contactFormParent">
+        <form class="contact-form" id="contactFormParent" name="contactForm">
             <div>
                 <label for="contact-name">Name:</label><br>
-                <input class="form-text-input" type="text" id="contact-name" name="contact-name" required><br> 
+                <input class="form-text-input" type="text" id="contact-name" name="contact-name"><br> 
             </div>
             
             <div>
                 <label for="contact-email">Email Address:</label>
-                <input class="form-text-input" type="email" id="contact-email" name="contact-email" required> 
+                <input class="form-text-input" type="email" id="contact-email" name="contact-email"> 
             </div>
            
             <div>
                 <label for="phone">Phone Number:</label>
-                <input class="form-text-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                <input class="form-text-input" type="tel" id="phone" name="phone">
             </div>
 
             <div class="contact-select">
@@ -64,7 +64,7 @@
 
             <div>
                 <label>Message:
-                    <textarea class="message" name="message" rows="10">
+                    <textarea id="message" class="message" name="message" rows="10">
                     </textarea>
                 </label>
             </div>    
@@ -79,7 +79,7 @@
                 <label for="no-email"> I do not want to receive any emails</label>
             </div>
             <div class="send">
-                <input class="send-button" type="submit" value="Send" onclick="inputsValue()">
+                <input class="send-button" type="submit" value="Send" onclick="validateForm(), inputsValue()">
             </div>
         </form>
     </main>
