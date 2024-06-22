@@ -11,6 +11,7 @@ function submitButton(e) {
     let inputsId = document.querySelectorAll('.form-text-input');
     let inputsRadio = document.querySelectorAll('.form-input-radio');
     let inputsCheckbox = document.querySelectorAll('.form-input-checkbox');
+    let inputMessage = document.querySelector('textarea');
     for (i = 0; i < inputsText.length; i++) {
         console.log(`${inputsId[i].id}:  ${inputsText[i].value}`);
     }
@@ -25,7 +26,8 @@ function submitButton(e) {
             let checkboxValue = inputsCheckbox[i].value;
             console.log(`Recieve emails about: ${checkboxValue}`);
         } 
-    }   
+    } 
+    console.log('Message: '+ inputMessage.value);  
 }
 
 
