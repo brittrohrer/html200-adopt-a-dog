@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
-<body>
+<body onload="preSelect()">
     <header>
         <div class="header-img-container">
             <div class="header-text-container">
@@ -36,50 +36,50 @@
 
     <main class="contact-page">
         <h1>Contact Us</h1>
-        <form class="contact-form">
+        <form class="contact-form" id="contactFormParent" name="contactForm">
             <div>
                 <label for="contact-name">Name:</label><br>
-                <input type="text" id="contact-name" name="contact-name" required><br> 
+                <input class="form-text-input" type="text" id="contact-name" name="contact-name"><br> 
             </div>
             
             <div>
                 <label for="contact-email">Email Address:</label>
-                <input type="email" id="contact-email" name="contact-email" required> 
+                <input class="form-text-input" type="email" id="contact-email" name="contact-email"> 
             </div>
            
             <div>
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                <input class="form-text-input" type="tel" id="phone" name="phone">
             </div>
 
             <div class="contact-select">
                 <p>Preferred Method for Contact:</p>
-                <input type="radio" id="call" name="contact-preferred" value="Call">
+                <input class="form-input-radio" type="radio" id="call" name="contact-preferred" value="Call">
                 <label for="call">Call</label><br>
-                <input type="radio" id="text" name="contact-preferred" value="Text">
+                <input class="form-input-radio" type="radio" id="text" name="contact-preferred" value="Text">
                 <label for="text">Text</label><br>
-                <input type="radio" id="email" name="contact-preferred" value="Email">
+                <input class="form-input-radio" type="radio" id="email" name="contact-preferred" value="Email">
                 <label for="email">Email</label><br>
             </div>
 
             <div>
                 <label>Message:
-                    <textarea class="message" name="message" rows="10">
+                    <textarea id="message" class="message" name="message" rows="10">
                     </textarea>
                 </label>
             </div>    
 
             <div class="contact-select">
                 <p>What e-mails would you like to recieve?</p>
-                <input type="checkbox" id="updated-dogs" name="updated-dogs" value="Dogs">
+                <input class="form-input-checkbox" type="checkbox" id="updated-dogs" name="updated-dogs" value="Dogs">
                 <label for="updated-dogs"> New dogs available for adoption</label><br>
-                <input type="checkbox" id="blogs" name="blogs" value="Blogs">
+                <input class="form-input-checkbox" type="checkbox" id="blogs" name="blogs" value="Blogs">
                 <label for="no-email"> New blog articles</label><br>
-                <input type="checkbox" id="no-email" name="no-email" value="No-Email">
+                <input class="form-input-checkbox" type="checkbox" id="no-email" name="no-email" value="No-Email">
                 <label for="no-email"> I do not want to receive any emails</label>
             </div>
             <div class="send">
-                <input class="send-button" type="submit" value="Send">
+                <input class="send-button" type="submit" value="Send" onclick="validateForm()">
             </div>
         </form>
     </main>
@@ -96,5 +96,6 @@
         <p class="location">&copy;2018 Adoptadog, LLC</p>
         <p class="location">Seattle, WA</p>
     </footer>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
